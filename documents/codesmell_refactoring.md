@@ -33,7 +33,7 @@
   - **Self-Documenting Code:**
     - Improved method names and code structure to make the comments less necessary.
 
-### 4. Print for Error Messages
+### 4. Dead Code
 - **Code Smell:**
   - Using `print` for error messages in the `record_time` method.
 
@@ -44,31 +44,7 @@
     raise ValueError("Error: Please provide values for all fields.")
     ```
 
-### 5. Printing in `generate_report`
-- **Code Smell:**
-  - The `generate_report` method prints directly to the console.
-
-- **Refactoring Technique:**
-  - **Separation of Concerns:**
-    - Modified the method to return a report string instead of printing directly.
-    ```python
-    def generate_report(self, start_date, end_date):
-        # ... (existing logic)
-        return report
-
-### 6. Printing in `priority_command`
-- **Code Smell:**
-  - The `priority_command` method prints directly to the console.
-
-- **Refactoring Technique:**
-  - **Separation of Concerns:**
-    - Modified the method to return a result string instead of printing directly.
-    ```python
-    def priority_command(self, num_activities=5):
-        # ... (existing logic)
-        return result
-
-### 7. Datetime Usage
+### 5. Alternate Class with Different Interfaces
 - **Code Smell:**
   - Inconsistent usage of the `datetime` module for date manipulation.
 
@@ -78,3 +54,20 @@
     ```python
     date = parser.parse("today").strftime("%Y/%m/%d")
     ```
+
+## Other Code Smells
+
+### 6. Speculative Generality
+- In early stages of project development, much of the app had been focused on preparing for the future features to be implemented.
+
+### 7. Divergent Change
+- Changes made to the database class will sometimes also need to be made to the main program class.
+
+### 8. Inapropreate Intimacy
+- The time tracker class and the database class rely heavily on eachother in order to function properly.
+
+### 9. Primative Obsession
+- Date and time handling might benefit from using a dedicated library or class instead of handling strings directly.
+
+### 10. Message Chains
+- The TimeTracker class directly accesses attributes of the record object in the generate_report method. This could lead to issues if the internal structure of the time_records table changes.

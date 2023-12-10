@@ -19,7 +19,7 @@ The Time Tracking Application is a simple tool designed to help you record and a
 ## Getting Started
 
 1. **Launch the Application:**
-   - Run the `main.py` file to start the application.
+   - Run the `program.py` file to start the application.
 
 2. **Initialization:**
    - The application will initialize a SQLite database (`time_tracker.db`) to store time records.
