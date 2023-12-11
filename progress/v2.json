@@ -1,0 +1,43 @@
+{"header" : {
+    "cloc_url"           : "github.com/AlDanial/cloc",
+    "cloc_version"       : "1.98",
+    "elapsed_seconds"    : 0.123517990112305,
+    "n_files"            : 6,
+    "n_lines"            : 277,
+    "files_per_second"   : 48.5759199493507,
+    "lines_per_second"   : 2242.58830432836},
+  "tests\\test_ver2_unit_tests.py" :{
+    "blank": 24,
+    "comment": 0,
+    "code": 79,
+    "language": "Python"},
+  "src\\timetracker.py" :{
+    "blank": 12,
+    "comment": 0,
+    "code": 49,
+    "language": "Python"},
+  "src\\app.py" :{
+    "blank": 7,
+    "comment": 0,
+    "code": 42,
+    "language": "Python"},
+  "tests\\test_acceptance_tests.py" :{
+    "blank": 9,
+    "comment": 0,
+    "code": 31,
+    "language": "Python"},
+  "src\\databasemanager.py" :{
+    "blank": 3,
+    "comment": 6,
+    "code": 11,
+    "language": "Python"},
+  "program.py" :{
+    "blank": 1,
+    "comment": 0,
+    "code": 3,
+    "language": "Python"},
+  "SUM": {
+    "blank": 56,
+    "comment": 6,
+    "code": 215,
+    "nFiles": 6} }
