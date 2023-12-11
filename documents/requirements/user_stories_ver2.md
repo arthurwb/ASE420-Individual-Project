@@ -13,7 +13,7 @@
 3. **Example Usage:**
    - As a user, I would want to type the following command to record my time usage in the database:
      ```bash
-     record today 09:30 10:30 'studied Java' :STUDY
+     record today 09:30 10:30 'studied Java' STUDY
      ```
 
 ### Query Time Usage
@@ -22,14 +22,14 @@
    - As a user, I expect to query my time usage from the database using a CUI with the following options:
      - Query by DATE: "query today"
      - Query by TASK: "query 'Java'"
-     - Query by TAG: "query :STUDY"
+     - Query by TAG: "query STUDY"
 
 5. **Example Usage:**
    - As a user, I would want to type the following commands to query my time usage:
      ```bash
      query today
      query 'Java'
-     query :STUDY
+     query STUDY
      ```
 
 ## Additional Features Requested by Jack
